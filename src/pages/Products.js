@@ -51,11 +51,10 @@ function Products() {
   if(products.data){
     content = 
     products.data.map((product, key) => 
-      <ul>
+      
         <ProductCard
           product={product}
         />
-      </ul>
     )
   }
 
@@ -63,8 +62,10 @@ function Products() {
     <div>
       <Header />
       <h2>Best sellers</h2>
-      <div>
+      <div className='product-list-container'>
+      <ul className='product-list'>
         {content}
+      </ul>
       </div>
     </div>
   )

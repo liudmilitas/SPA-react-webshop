@@ -110,3 +110,28 @@ a:hover {
 }
 
 /* Header styles end */
+
+/* Products card styles */
+
+.product-list-container { 
+  width: 100%;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 300px;
+  height: 450px;
+  list-style: none;
+}
+
+.product-card-image {
+  max-width: 90%;
+  height: auto;
+  
+}
+
+/* Products card styles end */
