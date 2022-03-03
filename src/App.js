@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Header from './components/Header.js'
+import Products from './pages/Products';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Products />
     </div>
   );
 }

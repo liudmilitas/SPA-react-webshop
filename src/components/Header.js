@@ -7,7 +7,7 @@ function Header() {
     <div className='header-wrapper'>
     <header>
       <div className='logo-wrapper'>
-        <img className="logo-image" src="https://lun-eu.icons8.com/a/pJIDm4zeFk2DluqK2wZeKw/QYZyX1Ni50yoZAt61QP8DA/logo.png" alt="Clay Shop Logo" className='logo-image'/>
+        <img className="logo-image" src="https://lun-eu.icons8.com/a/pJIDm4zeFk2DluqK2wZeKw/QYZyX1Ni50yoZAt61QP8DA/logo.png" alt="Clay Shop Logo"/>
         <h1>Clay Shop</h1>
       </div>
       <ul className='header-media-links'>
