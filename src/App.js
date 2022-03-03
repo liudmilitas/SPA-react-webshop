@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import Header from './components/Header.js'
+import Footer from './components/Footer';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Header />
       Webshop in React
+      <Footer />
     </div>
   );
 }

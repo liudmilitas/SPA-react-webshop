@@ -1,0 +1,23 @@
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer-links > ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-links > ul > li {
+    padding: 2px;
+}
+
+.footer-input{
+    padding: 5px;
+}
+
+.footer-button{
+    padding: 5px;
+}
