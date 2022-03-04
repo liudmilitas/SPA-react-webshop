@@ -13,7 +13,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      Webshop in React
       <Route exact path="/" component={Products}/>
       <Route path="/product/:id" component={Product}/>
       <Route path="/checkout" component={Checkout}/>

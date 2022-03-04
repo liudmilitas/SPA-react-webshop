@@ -76,6 +76,82 @@
     color: var(--pink);
 }
 
+/* ----------- Checkout CSS ------------ */
+
+.checkout-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.checkout-container{
+    margin: auto;
+    max-width: 900px;
+    padding-bottom: 30px;
+} 
+
+.input-group{
+    max-width: 450px;
+}
+
+.short-input{
+    width: 230px !important;
+}
+
+
+.checkout-input-title{
+    width: 100%;
+    display: inline-block;
+}
+
+.checkout-input{
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: var(--gray3) solid 1px;
+}
+
+.card-details-container{
+    box-shadow: 3px 3px 15px var(--gray4);
+    margin: auto;
+    margin-top: 30px;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--pink);
+    max-width: 400px;
+    text-align: center;
+}
+
+.card-details-input{
+    margin: 0 2px;
+    max-width: 70px;
+    padding: 5px;
+    border-radius: 10px;
+    border: var(--gray3) solid 1px;
+}
+
+.submit-purchase-button{
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    border: var(--gray3) solid 5px;
+    color: var(--white);
+    font-size: 1.2em;
+    background-color: var(--gray3);
+}
+
+.submit-purchase-button:hover{
+    cursor: pointer;
+}
+
+.submit-button-container{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
 
 /* ----------- Footer CSS ------------ */
 
