@@ -52,6 +52,10 @@
     margin: 0 5px;
 }
 
+.product-btn:hover{
+    cursor: pointer;
+}
+
 .p-btn2{
     background-color: var(--white);
     color: var(--pink);
@@ -60,14 +64,32 @@
 .product-img {
     width: 50%;
 }
+/* ----------- Ratings CSS ------------ */
+
+.ratings-container{
+    margin-top: 20px;
+    padding: 10px;
+   
+}
+
+.rating-stars{
+    color: var(--pink);
+}
+
 
 /* ----------- Footer CSS ------------ */
+
+.footer{
+    width: 100%;
+    border-top: solid var(--gray3) 1px;
+}
 
 .footer-container{
     display: flex;
     justify-content: space-between;
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
+    padding: 30px 10px;
 }
 
 .footer-links > ul {
@@ -98,4 +120,8 @@
     color: var(--white);
     font-size: 1.2em;
     background-color: var(--pink);
+}
+
+.footer-button:hover{
+    cursor: pointer;
 }
