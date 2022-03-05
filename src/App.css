@@ -1,0 +1,203 @@
+:root {
+    --pink: #EDA3B5;
+    --white: #FFFFFF;
+    --black: #1B2437;
+    --gray1: #EFEFF4;
+    --gray2: #E5E5EA;
+    --gray3: #C7C7CC;
+    --gray4: #48484A;
+  }
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 900px;
+}
+
+.product-group1{
+    width: 50%;
+}
+
+.product-storage{
+    margin-top: 20px;
+}
+
+.product-group2{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+.product-price{
+    margin: 0;
+    padding-right: 10px;
+}
+
+.product-title{
+    width: 100%;
+}
+
+.product-description {
+    max-width: 400px;
+}
+
+.product-btn{
+    border-radius: 10px;
+    padding: 5px;
+    border: var(--pink) solid 2px;
+    color: var(--white);
+    font-size: 1.2em;
+    background-color: var(--pink);
+    margin: 0 5px;
+}
+
+.product-btn:hover{
+    cursor: pointer;
+}
+
+.p-btn2{
+    background-color: var(--white);
+    color: var(--pink);
+}
+
+.product-img {
+    width: 50%;
+}
+/* ----------- Ratings CSS ------------ */
+
+.ratings-container{
+    margin-top: 20px;
+    padding: 10px;
+   
+}
+
+.rating-stars{
+    color: var(--pink);
+}
+
+/* ----------- Checkout CSS ------------ */
+
+.checkout-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.checkout-container{
+    margin: auto;
+    max-width: 900px;
+    padding-bottom: 30px;
+} 
+
+.input-group{
+    max-width: 450px;
+}
+
+.short-input{
+    width: 230px !important;
+}
+
+
+.checkout-input-title{
+    width: 100%;
+    display: inline-block;
+}
+
+.checkout-input{
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: var(--gray3) solid 1px;
+}
+
+.card-details-container{
+    box-shadow: 3px 3px 15px var(--gray4);
+    margin: auto;
+    margin-top: 30px;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--pink);
+    max-width: 400px;
+    text-align: center;
+}
+
+.card-details-input{
+    margin: 0 2px;
+    max-width: 70px;
+    padding: 5px;
+    border-radius: 10px;
+    border: var(--gray3) solid 1px;
+}
+
+.submit-purchase-button{
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    border: var(--gray3) solid 5px;
+    color: var(--white);
+    font-size: 1.2em;
+    background-color: var(--gray3);
+}
+
+.submit-purchase-button:hover{
+    cursor: pointer;
+}
+
+.submit-button-container{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+/* ----------- Footer CSS ------------ */
+
+.footer{
+    width: 100%;
+    border-top: solid var(--gray3) 1px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 10px;
+}
+
+.footer-links > ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-links > ul > li {
+    color: var(--gray4);
+    padding: 2px;
+}
+
+.footer-input{
+    padding: 5px;
+    border-radius: 10px;
+    border-end-end-radius: 0;
+    border-start-end-radius: 0;
+    font-size: 1.2em;
+    border: var(--gray3) solid 1px;
+}
+  
+.footer-button{
+    border-radius: 10px;
+    padding: 5px;
+    border-start-start-radius: 0;
+    border-end-start-radius: 0;
+    border: var(--pink) solid 1px;
+    color: var(--white);
+    font-size: 1.2em;
+    background-color: var(--pink);
+}
+
+.footer-button:hover{
+    cursor: pointer;
+}
