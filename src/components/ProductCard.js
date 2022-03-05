@@ -9,7 +9,10 @@ function ProductCard(props) {
         <h3>{props.product.title}</h3>
       <span>{props.product.price}$</span>
       <button>SEE DETAILS</button>
-      <button>ADD TO CART</button>
+      <button onClick={() => {
+          console.log("adding to cart", props.product)
+          props.addProductToCart(props.product)
+      }}>ADD TO CART</button>
     </li>
   )
 }

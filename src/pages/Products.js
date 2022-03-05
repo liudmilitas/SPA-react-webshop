@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Header from '../components/Header.js'
 import ProductCard from '../components/ProductCard.js'
 
-function Products() {
+function Products(props) {
   const urlAPI = "https://codexplained.se/shoes.php"
   const [products, setProducts] = useState({
     loading: false,
@@ -54,13 +54,15 @@ function Products() {
       
         <ProductCard
           product={product}
+          addProductToCart={props.addProductToCart}
+          setShowCart={props.setShowCart}
         />
     )
   }
 
   return (
     <div>
-      <Header />
+      <Header cart={props.cart} setShowCart={props.setShowCart}/>
       <h2>Best sellers</h2>
       <div className='product-list-container'>
       <ul className='product-list'>
