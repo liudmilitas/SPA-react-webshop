@@ -1,12 +1,12 @@
 import './App.css';
 import { Route } from "react-router-dom";
 import React, { useState } from 'react';
-import Header from './components/Header.js'
 import Footer from './components/Footer';
 import Product from './pages/Product';
 import Products from './pages/Products';
 import Checkout from './pages/Checkout';
 import Cart from "./components/Cart";
+import useCartHandler from './components/CartHandler';
 
 export const cartItemCount = (cart) => {
   //Calculate the total number of items in the cart
@@ -21,8 +21,7 @@ export const cartTotal = (cart) => {
 function App() {
 
     const [showCart, setShowCart] = useState(false);
-
-    const [cart, setCart] = useState([]);
+    const [cart, setCart] = useCartHandler();
 
     const addProductToCart = (product, quantity = 1) => {
         if (cart.find(item => item.id === product.id)) {
@@ -51,9 +50,10 @@ function App() {
 
   return (
     <div className="App">
-      
       <Cart {...{cart, showCart, setShowCart, setProductQuantity, addProductToCart}}/>
       <Products {...{cart, setShowCart, addProductToCart}}/>
+       {/*Sorry, had to comment this line out (for now) because it was breaking everything
+       <Route exact path="/" component={Products}/>*/}
       <Route path="/product/:id" component={Product}/>
       <Route path="/checkout" component={Checkout}/>
       <Footer />
