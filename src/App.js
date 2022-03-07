@@ -2,6 +2,7 @@ import './App.css';
 import { Route } from "react-router-dom";
 import React, { useState } from 'react';
 import Footer from './components/Footer';
+import Header from './components/Header';
 import Product from './pages/Product';
 import Products from './pages/Products';
 import Checkout from './pages/Checkout';
@@ -53,6 +54,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header cart={cart} setShowCart={setShowCart}/>
       <Cart {...{cart, showCart, setShowCart, setProductQuantity, addProductToCart}}/>
       <Route exact path="/" render={() => <Products {...{cart, setShowCart, addProductToCart}}/>}/>
       <Route path="/product/:id" component={Product}/>

@@ -62,7 +62,7 @@ function Products(props) {
 
   return (
     <div>
-      <Header cart={props.cart} setShowCart={props.setShowCart}/>
+      
       <h2>Best sellers</h2>
       <div className='product-list-container'>
       <ul className='product-list'>
