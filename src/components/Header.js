@@ -15,17 +15,17 @@ function Header(props) {
       <ul className='header-media-links'>
         <li>
           <a href="#">
-          <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png"/>
+          <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png" alt=""/>
           </a>
         </li>
         <li>
           <a href="#">
-          <img src="https://img.icons8.com/material/24/000000/twitter-squared.png"/>
+          <img src="https://img.icons8.com/material/24/000000/twitter-squared.png" alt=""/>
           </a>
         </li>
         <li>
           <a href="#">
-          <img src="https://img.icons8.com/material-outlined/24/000000/facebook-new.png"/>
+          <img src="https://img.icons8.com/material-outlined/24/000000/facebook-new.png" alt=""/>
           </a>
         </li>
       </ul>

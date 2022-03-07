@@ -46,8 +46,8 @@ function App() {
             }
             return item;
         }));
-
       
+    const clearTheCart = () => {setCart()}
     }
 
   return (

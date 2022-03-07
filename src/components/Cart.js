@@ -21,7 +21,7 @@ function Cart(props) {
         ))}
         <p>Total: {cartTotal(props.cart)} $</p>
         <a href='/checkout'>Go to Checkout</a>
-        <button>Clear Cart</button>
+        <button onClick={props.clearTheCart}>Clear Cart</button>
       </div>
   )
 }

@@ -7,7 +7,7 @@ function ProductCard(props) {
         <img className="product-card-image" src={props.product.url} alt={props.product.description} />
     
         <h3>{props.product.title}</h3>
-      <span>{props.product.price}$</span>
+      <strong>{props.product.price}$</strong>
       <Link to={`/products/${props.product.id}`}>See Details</Link>
       <button onClick={() => {
           console.log("adding to cart", props.product)
