@@ -38,7 +38,7 @@ function Checkout() {
             <div>Quantity: {product.quantity}</div>
             <b>Total price: {product.total}:-</b>
           </div>
-          <img width="200" src={product.url}></img>
+          <img width="200" height="160" src={product.url}></img>
         </div>
       );
     });

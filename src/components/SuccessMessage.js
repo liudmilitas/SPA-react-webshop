@@ -9,7 +9,7 @@ function SuccessMessage() {
                 <img width="300" src={successLogo}></img>
                 <h1>Successfully ordered!</h1>
                 <p>Your new shoes will now be with you shortly!</p>
-                <Link to='/products'><button className='product-btn p-btn1'>Back to shop</button></Link>
+                <Link to='/'><button className='product-btn p-btn1'>Back to shop</button></Link>
             </div>
         </div>
     );
