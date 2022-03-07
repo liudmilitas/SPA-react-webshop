@@ -49,7 +49,7 @@ function Product() {
         quantity: 1
       }]);
     }
-  };
+  }; 
 
   /*  const shopNowButton = () => (
      <Route render={({ history }) => (
