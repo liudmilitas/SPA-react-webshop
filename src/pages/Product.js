@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import useCartHandler from '../components/CartHandler';
+//import { Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Product() {
 
@@ -33,6 +35,34 @@ function Product() {
     }
   };
 
+  function shopNow() {
+    console.log('Shopnow');
+    let cartCopy = [...cart];
+
+    let cartItem = cartCopy.find(item => item.id === id);
+    if (cartItem) {
+      cartItem.quantity++;
+      setCart(cartCopy);
+    } else {
+      setCart([...cart, {
+        id: id,
+        quantity: 1
+      }]);
+    }
+  };
+
+  /*  const shopNowButton = () => (
+     <Route render={({ history }) => (
+       <button
+         className='product-btn p-btn2'
+         type='button'
+         onClick={() => { history.push('/checkout') }}
+       >
+         Shop now
+       </button>
+     )} />
+   ) */
+
   return (
     <div className='product-container'>
       <h1 className='product-title'>{product?.title}</h1>
@@ -42,10 +72,10 @@ function Product() {
         <div className='product-group2'>
           <h2 className='product-price'>{product?.price}:-</h2>
           <button onClick={addToCart} className='product-btn p-btn1'>Add to cart</button>
-          <button className='product-btn p-btn2'>Shop now</button>
+          <Link to="/checkout" onClick={() => shopNow()}><button className='product-btn p-btn2'>Shop now</button></Link>
         </div>
       </div>
-      <img className='product-img' src={product?.url}></img>
+      <img className='product-img' alt='product' src={product?.url}></img>
       <div className='ratings-container'>
         <hr></hr>
         <div className='ratings'>
