@@ -135,3 +135,11 @@ a:hover {
 }
 
 /* Products card styles end */
+
+/* Cart styles */
+
+.cart-product-image {
+  height: 4rem;
+}
+
+/* Cart styles end */
