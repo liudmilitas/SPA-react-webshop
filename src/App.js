@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Product from './pages/Product';
 import Products from './pages/Products';
 import Checkout from './pages/Checkout';
+import SucessMessage from './components/SuccessMessage';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route exact path="/" component={Products}/>
       <Route path="/product/:id" component={Product}/>
       <Route path="/checkout" component={Checkout}/>
+      <Route path="/successmessage" component={SucessMessage}/>
       <Footer />
     </div>
   );

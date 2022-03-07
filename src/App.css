@@ -153,6 +153,25 @@
     width: 100%;
 }
 
+.checkout-product{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 5px 0;
+    border-bottom: var(--gray3) 1px solid;
+}
+
+.checkout-success-message{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.success-message-container{
+    height: 60vh;
+}
+
 /* ----------- Footer CSS ------------ */
 
 .footer{
