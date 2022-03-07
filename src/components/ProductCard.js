@@ -8,7 +8,7 @@ function ProductCard(props) {
     
         <h3>{props.product.title}</h3>
       <span>{props.product.price}$</span>
-      <button>SEE DETAILS</button>
+      <Link to={`/products/${props.product.id}`}>See Details</Link>
       <button onClick={() => {
           console.log("adding to cart", props.product)
           props.addProductToCart(props.product)

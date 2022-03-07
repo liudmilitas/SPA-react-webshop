@@ -6,7 +6,6 @@ import useCartHandler from '../components/CartHandler';
 function Cart(props) {
   //TODO: Display a backdrop that, when clicked, closes the cart using props.setShowCart(false)
   //TODO: Write styling for sliding in the cart
-  const [cart, setCart] = useCartHandler();
   return (
       <div style={{display: props.showCart ? "block" : "none"}}>
         <button onClick={() => {
@@ -14,14 +13,14 @@ function Cart(props) {
           props.setShowCart(false)
         }}>Hide</button>
         <p>Cart contents:</p>
-        {cart.map(item => (
+        {props.cart.map(item => (
           <div key={item.id}>
             <img className='cart-product-image' src={item.url} alt={item.title} />
             <p>{item.title} x {item.quantity}</p>
           </div>
         ))}
         <p>Total: {cartTotal(props.cart)} $</p>
-        <button>Go to Checkout</button>
+        <a href='/checkout'>Go to Checkout</a>
         <button>Clear Cart</button>
       </div>
   )
