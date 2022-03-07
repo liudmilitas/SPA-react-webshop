@@ -46,7 +46,7 @@ function Checkout() {
   const noItemsHTML = (
     <div>
       <h2>Your cart is currently empty...</h2>
-      <Link to="/products"><button className='product-btn p-btn1'>Browse for shoes now</button></Link>
+      <Link to="/"><button className='product-btn p-btn1'>Browse for shoes now</button></Link>
     </div>
   );
 

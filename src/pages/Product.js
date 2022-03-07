@@ -19,49 +19,25 @@ function Product() {
       })
   }, []);
 
-  function addToCart() {
+  function addToCart(redirect) {
 
     let cartCopy = [...cart];
 
-    let cartItem = cartCopy.find(item => item.id === id);
+    let cartItem = cartCopy.find(item => item.id === Number(id));
     if (cartItem) {
       cartItem.quantity++;
       setCart(cartCopy);
     } else {
       setCart([...cart, {
-        id: id,
+        id: Number(id),
         quantity: 1
       }]);
     }
+
+    if(redirect){
+      window.location = '/checkout'
+    } 
   };
-
-  function shopNow() {
-    console.log('Shopnow');
-    let cartCopy = [...cart];
-
-    let cartItem = cartCopy.find(item => item.id === id);
-    if (cartItem) {
-      cartItem.quantity++;
-      setCart(cartCopy);
-    } else {
-      setCart([...cart, {
-        id: id,
-        quantity: 1
-      }]);
-    }
-  }; 
-
-  /*  const shopNowButton = () => (
-     <Route render={({ history }) => (
-       <button
-         className='product-btn p-btn2'
-         type='button'
-         onClick={() => { history.push('/checkout') }}
-       >
-         Shop now
-       </button>
-     )} />
-   ) */
 
   return (
     <div className='product-container'>
@@ -71,8 +47,8 @@ function Product() {
         <div className='product-storage'>In stock: {product?.storage}</div>
         <div className='product-group2'>
           <h2 className='product-price'>{product?.price}:-</h2>
-          <button onClick={addToCart} className='product-btn p-btn1'>Add to cart</button>
-          <Link to="/checkout" onClick={() => shopNow()}><button className='product-btn p-btn2'>Shop now</button></Link>
+          <button onClick={() => addToCart(false)} className='product-btn p-btn1'>Add to cart</button>
+          <button className='product-btn p-btn2' onClick={() => addToCart(true)}>Shop now</button>
         </div>
       </div>
       <img className='product-img' alt='product' src={product?.url}></img>
