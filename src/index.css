@@ -8,8 +8,7 @@ body {
   font-size: 16px;
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 h1,
@@ -28,6 +27,7 @@ code {
 
 /* Header styles*/
 header {
+  margin: auto; /* <-- Detta har jag satt in, det centrerar navbaren men verkar inte helt 100% symmetriskt // Celli */
   align-content: center;
   display: flex;
   height: 64px;
@@ -46,6 +46,7 @@ header {
 }
 
 nav {
+  margin: auto; /* <-- Detta har jag satt in, verkar fungera fint // Celli */
   display: flex;
   justify-content: space-around;
   max-width: 1200px;
@@ -60,6 +61,7 @@ nav {
 .navigation-links li {
   margin-right: 1rem;
 }
+
 a {
   color: #000;
   text-decoration: none;
