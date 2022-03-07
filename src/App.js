@@ -51,9 +51,8 @@ function App() {
   return (
     <div className="App">
       <Cart {...{cart, showCart, setShowCart, setProductQuantity, addProductToCart}}/>
-      <Products {...{cart, setShowCart, addProductToCart}}/>
-       {/*Sorry, had to comment this line out (for now) because it was breaking everything
-       <Route exact path="/" component={Products}/>*/}
+       {/*Sorry, had to comment this line out (for now) because it was breaking everything*/}
+       <Route exact path="/" render={() => <Products {...{cart, setShowCart, addProductToCart}}/>}/>
       <Route path="/product/:id" component={Product}/>
       <Route path="/checkout" component={Checkout}/>
       <Footer />
