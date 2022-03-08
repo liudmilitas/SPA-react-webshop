@@ -59,7 +59,7 @@ function App() {
     <div className="App">
       <Header cart={cart} clearTheCart={clearTheCart} setShowCart={setShowCart}/>
       <Cart {...{cart, showCart, setShowCart, setProductQuantity, addProductToCart, clearTheCart}}/>
-      <Route path="/" component={Slider}/>
+      <Route exact path="/" component={Slider}/>
       <Route exact path="/" render={() => <Products {...{cart, setShowCart, addProductToCart}}/>}/>
       <Route path="/product/:id" component={Product}/>
       <Route path="/checkout" component={Checkout}/>
