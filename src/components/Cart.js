@@ -11,7 +11,7 @@ function Cart(props) {
         <button className='cart-buttons' onClick={() => {
           console.log("hiding cart...")
           props.setShowCart(false)
-        }}>Hide</button>
+        }}>Hide (X)</button>
         {props.cart.length ? <p><strong>Cart contents:</strong></p> : <p>Oops! Your cart is all empty!</p>}
         {props.cart.map(item => (
           <div className='single-cart-product' key={item.id}>
@@ -19,7 +19,7 @@ function Cart(props) {
             <p>{item.title} x {item.quantity}</p>
           </div>
         ))}
-        <p>Total: {cartTotal(props.cart)} $</p>
+        <p className='cart-total'>Total: {cartTotal(props.cart)} $</p>
         <a className='cart-link-to-checkout' href='/checkout'>Go to Checkout</a><br />
         <button className='cart-buttons' onClick={props.clearTheCart}>Clear Cart</button>
       </div>
