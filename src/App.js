@@ -9,6 +9,7 @@ import Checkout from './pages/Checkout';
 import SucessMessage from './components/SuccessMessage';
 import Cart from "./components/Cart";
 import useCartHandler from './components/CartHandler';
+import Slider from './components/Slider';
 
 export const cartItemCount = (cart) => {
   //Calculate the total number of items in the cart
@@ -58,6 +59,7 @@ function App() {
     <div className="App">
       <Header cart={cart} clearTheCart={clearTheCart} setShowCart={setShowCart}/>
       <Cart {...{cart, showCart, setShowCart, setProductQuantity, addProductToCart, clearTheCart}}/>
+      <Route path="/" component={Slider}/>
       <Route exact path="/" render={() => <Products {...{cart, setShowCart, addProductToCart}}/>}/>
       <Route path="/product/:id" component={Product}/>
       <Route path="/checkout" component={Checkout}/>
