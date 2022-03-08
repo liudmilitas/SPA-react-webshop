@@ -63,7 +63,7 @@ function Products(props) {
   return (
     <div>
       
-      <h2>Best sellers</h2>
+      <h2 className='products-h2-heading'>Best sellers</h2>
       <div className='product-list-container'>
       <ul className='product-list'>
         {content}

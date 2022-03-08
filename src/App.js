@@ -48,14 +48,16 @@ function App() {
             }
             return item;
         }));
-      
-    const clearTheCart = () => {setCart()}
+    }
+
+    const clearTheCart = () => {
+      setCart([])
     }
 
   return (
     <div className="App">
-      <Header cart={cart} setShowCart={setShowCart}/>
-      <Cart {...{cart, showCart, setShowCart, setProductQuantity, addProductToCart}}/>
+      <Header cart={cart} clearTheCart={clearTheCart} setShowCart={setShowCart}/>
+      <Cart {...{cart, showCart, setShowCart, setProductQuantity, addProductToCart, clearTheCart}}/>
       <Route exact path="/" render={() => <Products {...{cart, setShowCart, addProductToCart}}/>}/>
       <Route path="/product/:id" component={Product}/>
       <Route path="/checkout" component={Checkout}/>

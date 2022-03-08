@@ -4,24 +4,25 @@ import useCartHandler from '../components/CartHandler';
 
 
 function Cart(props) {
-  //TODO: Display a backdrop that, when clicked, closes the cart using props.setShowCart(false)
   //TODO: Write styling for sliding in the cart
   return (
-      <div style={{display: props.showCart ? "block" : "none"}}>
-        <button onClick={() => {
+    <div className='cart-overlay' style={{visibility: props.showCart ? "visible" : "hidden"}}>
+      <div className='cart-wrapper'>
+        <button className='cart-buttons' onClick={() => {
           console.log("hiding cart...")
           props.setShowCart(false)
         }}>Hide</button>
-        <p>Cart contents:</p>
+        {props.cart.length ? <p><strong>Cart contents:</strong></p> : <p>Oops! Your cart is all empty!</p>}
         {props.cart.map(item => (
-          <div key={item.id}>
+          <div className='single-cart-product' key={item.id}>
             <img className='cart-product-image' src={item.url} alt={item.title} />
             <p>{item.title} x {item.quantity}</p>
           </div>
         ))}
         <p>Total: {cartTotal(props.cart)} $</p>
-        <a href='/checkout'>Go to Checkout</a>
-        <button onClick={props.clearTheCart}>Clear Cart</button>
+        <a className='cart-link-to-checkout' href='/checkout'>Go to Checkout</a><br />
+        <button className='cart-buttons' onClick={props.clearTheCart}>Clear Cart</button>
+      </div>
       </div>
   )
 }
