@@ -256,7 +256,8 @@ header {
     margin: auto; /* <-- Detta har jag satt in, verkar fungera fint // Celli */
     display: flex;
     justify-content: space-around;
-    max-width: 1200px;
+    width: 100%;
+    border-bottom: solid var(--gray3) 1px;
   }
   
   .navigation-links {
