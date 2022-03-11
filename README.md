@@ -8,18 +8,20 @@ An e-store website developed as a final project for the React development course
 
 <h2>Goal and requirements</h2>
 
-Our main task was to develop a dynamic e-commerce website with the help of React, React hooks, APIs and Framer Motion React Library.
+Our main task was to develop a dynamic e-commerce website with the help of React, React hooks, OS APIs and Framer Motion React Library.
 
 <h2>Key points</h2>
 
 - Single page application (SAP)
-- Shopping cart/Wishlist 
-- Dark/Light Mode
+- Persistent shopping cart
+- Checkout with client-side validation
+- Slider built with Framer Motion
 
 <h2>Installation</h2>
 
-1. Download this project as zip and extract it
-2. Run index.html in your browser
+1. Download this project as zip and extract it.
+2. Open it in the Editor of your choice (we used VS code)
+3. Run "npm start" in the terminal.
 
 <h2>Credits</h2>
 
