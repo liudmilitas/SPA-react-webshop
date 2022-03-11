@@ -32,7 +32,6 @@ function Header(props) {
       </ul>
       <div className="shopping-cart-wrapper">
         <button className='shopping-cart-button' onClick={() => {
-          console.log("showing cart...")
           props.setShowCart(true)
         }}>{props.cart.length > 0 && cartItemCount(props.cart)}{}{shoppingBag}</button>
       </div>

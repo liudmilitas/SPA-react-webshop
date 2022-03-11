@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react'
-import Header from '../components/Header.js'
 import ProductCard from '../components/ProductCard.js'
 
 function Products(props) {
@@ -56,6 +55,7 @@ function Products(props) {
           product={product}
           addProductToCart={props.addProductToCart}
           setShowCart={props.setShowCart}
+          key = {key}
         />
     )
   }

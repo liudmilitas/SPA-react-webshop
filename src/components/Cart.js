@@ -1,6 +1,5 @@
 import React from 'react'
 import { cartTotal } from '../App';
-import useCartHandler from '../components/CartHandler';
 
 
 function Cart(props) {
@@ -9,7 +8,6 @@ function Cart(props) {
     <div className='cart-overlay' style={{visibility: props.showCart ? "visible" : "hidden"}}>
       <div className='cart-wrapper'>
         <button className='cart-buttons' onClick={() => {
-          console.log("hiding cart...")
           props.setShowCart(false)
         }}>Hide (X)</button>
         {props.cart.length ? <p><strong>Cart contents:</strong></p> : <p>Oops! Your cart is all empty!</p>}
