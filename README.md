@@ -17,12 +17,6 @@ Our main task was to develop a dynamic e-commerce website with the help of React
 - Checkout with client-side validation
 - Slider built with Framer Motion
 
-<h2>Installation</h2>
-
-1. Download this project as zip and extract it.
-2. Open it in the Editor of your choice (we used VS code)
-3. Run "npm start" in the terminal.
-
 <h2>Credits</h2>
 
 - Celina Johansson
